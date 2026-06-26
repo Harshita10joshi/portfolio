@@ -32,7 +32,8 @@ import {
   Menu,
   X,
 } from "lucide-react";
-import portrait from "@/assets/harshita.jpg";
+import portraitAsset from "@/assets/harshita.png.asset.json";
+const portrait = portraitAsset.url;
 import { toast } from "sonner";
 
 /* ------------------------- Shared building blocks ------------------------- */
