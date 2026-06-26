@@ -51,8 +51,9 @@ function Section({
   children: ReactNode;
 }) {
   return (
-    <section id={id} className="relative scroll-mt-24 py-24 sm:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id={id} className="relative scroll-mt-24 py-16 sm:py-24 lg:py-32">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -66,7 +67,7 @@ function Section({
               {eyebrow}
             </span>
           )}
-          <h2 className="text-balance text-4xl font-semibold sm:text-5xl">{title}</h2>
+          <h2 className="text-balance text-3xl font-semibold sm:text-4xl md:text-5xl">{title}</h2>
           {subtitle && (
             <p className="mt-4 text-pretty text-base text-muted-foreground sm:text-lg">{subtitle}</p>
           )}
@@ -120,7 +121,8 @@ function Navbar() {
         scrolled ? "py-3" : "py-5"
       }`}
     >
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+
         <div
           className={`flex items-center justify-between rounded-2xl px-4 py-3 transition-all duration-300 ${
             scrolled ? "glass-strong shadow-[0_8px_30px_-12px_rgba(0,0,0,0.5)]" : "bg-transparent"
@@ -239,7 +241,7 @@ const HERO_BADGES = [
 
 function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-36 pb-20 sm:pt-44 sm:pb-28">
+    <section id="top" className="relative overflow-hidden pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-44 lg:pb-28">
       {/* glow orbs */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-32 size-[520px] -translate-x-1/2 rounded-full bg-brand-purple/20 blur-[120px]" />
@@ -247,7 +249,8 @@ function Hero() {
         <div className="absolute left-10 bottom-0 size-[300px] rounded-full bg-brand-cyan/10 blur-[100px]" />
       </div>
 
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+
         <div className="grid items-center gap-14 lg:grid-cols-[1.2fr_1fr]">
           <div>
             <motion.span
@@ -267,7 +270,7 @@ function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.05 }}
-              className="mt-6 text-balance text-5xl font-semibold leading-[1.05] sm:text-6xl lg:text-7xl"
+              className="mt-6 text-balance text-4xl font-semibold leading-[1.05] sm:text-5xl md:text-6xl lg:text-7xl"
             >
               Hi, I'm <span className="text-gradient">Harshita Joshi</span>
             </motion.h1>
@@ -276,7 +279,7 @@ function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.15 }}
-              className="mt-4 font-display text-2xl font-medium text-foreground/80 sm:text-3xl"
+              className="mt-4 font-display text-xl font-medium text-foreground/80 sm:text-2xl md:text-3xl"
             >
               <Typewriter />
             </motion.div>
