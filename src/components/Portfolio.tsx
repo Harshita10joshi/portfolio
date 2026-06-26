@@ -1,5 +1,6 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { motion, AnimatePresence, useScroll, useSpring } from "framer-motion";
+import resumeAsset from "@/assets/resume.pdf.asset.json";
 import {
   ArrowRight,
   ArrowUp,
@@ -298,7 +299,10 @@ function Hero() {
               className="mt-8 flex flex-wrap gap-3"
             >
               <a
-                href="/resume.pdf"
+                href={resumeAsset.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                download="Harshita_Joshi_Resume.pdf"
                 className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-brand-blue to-brand-purple px-5 py-3 text-sm font-medium text-primary-foreground transition hover:shadow-[0_12px_40px_-12px_oklch(0.7_0.22_305_/_0.7)]"
               >
                 <Download className="size-4" />
