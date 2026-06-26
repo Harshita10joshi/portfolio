@@ -419,7 +419,7 @@ function About() {
     >
       <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
         <Reveal>
-          <div className="glass rounded-3xl p-8">
+          <div className="glass rounded-3xl p-5 sm:p-8">
             <p className="text-pretty text-base leading-relaxed text-foreground/85 sm:text-lg">
               I'm a final year{" "}
               <span className="text-foreground">B.Tech CSE student at DIT University</span>,
@@ -449,7 +449,7 @@ function About() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <div className="glass flex h-full flex-col gap-5 rounded-3xl p-8">
+          <div className="glass flex h-full flex-col gap-5 rounded-3xl p-5 sm:p-8">
             <div className="flex items-center gap-3">
               <MapPin className="size-4 text-brand-blue" />
               <span className="text-sm text-muted-foreground">Faridabad, Haryana, India</span>
@@ -731,7 +731,7 @@ function Projects() {
         {PROJECTS.map((p, i) => (
           <Reveal key={p.title} delay={i * 0.06}>
             <article
-              className={`glass group relative flex h-full flex-col overflow-hidden rounded-3xl p-7 transition hover:-translate-y-1 hover:bg-white/[0.05] ${
+              className={`glass group relative flex h-full flex-col overflow-hidden rounded-3xl p-5 sm:p-7 transition hover:-translate-y-1 hover:bg-white/[0.05] ${
                 p.featured ? "md:col-span-2" : ""
               }`}
             >
@@ -982,7 +982,7 @@ function CertsAndLearning() {
     >
       <div className="grid gap-8 lg:grid-cols-[1fr_1.4fr]">
         <Reveal>
-          <div className="glass h-full rounded-3xl p-7">
+          <div className="glass h-full rounded-3xl p-5 sm:p-7">
             <div className="mb-4 inline-grid size-10 place-items-center rounded-xl bg-gradient-to-br from-brand-blue to-brand-purple">
               <Award className="size-5 text-primary-foreground" />
             </div>
@@ -1008,7 +1008,7 @@ function CertsAndLearning() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <div className="glass h-full rounded-3xl p-7">
+          <div className="glass h-full rounded-3xl p-5 sm:p-7">
             <div className="mb-4 inline-grid size-10 place-items-center rounded-xl bg-gradient-to-br from-brand-purple to-brand-cyan">
               <BookOpen className="size-5 text-primary-foreground" />
             </div>
@@ -1093,7 +1093,7 @@ function ContactForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="glass-strong rounded-3xl p-7 sm:p-9">
+    <form onSubmit={onSubmit} className="glass-strong rounded-3xl p-5 sm:p-7 lg:p-9">
       <div className="grid gap-4 sm:grid-cols-2">
         <Field label="Name" name="name" placeholder="Jane Doe" />
         <Field label="Email" name="email" type="email" placeholder="jane@company.com" />
@@ -1163,7 +1163,7 @@ function Contact() {
     >
       <div className="grid gap-6 lg:grid-cols-[1fr_1.3fr]">
         <Reveal>
-          <div className="glass flex h-full flex-col gap-5 rounded-3xl p-7 sm:p-9">
+          <div className="glass flex h-full flex-col gap-5 rounded-3xl p-5 sm:p-7 lg:p-9">
             <ContactRow icon={Mail} label="Email" value="harshitajoshi232@gmail.com" href="mailto:harshitajoshi232@gmail.com" />
             <ContactRow icon={MapPin} label="Location" value="Faridabad, Haryana, India" />
             <ContactRow icon={Linkedin} label="LinkedIn" value="linkedin.com/in/harshita-joshi" href="https://www.linkedin.com/in/harshita-joshi-5b3623284/" />
@@ -1217,7 +1217,7 @@ function ContactRow({
 function Footer() {
   return (
     <footer className="border-t border-white/5 py-10">
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 sm:flex-row">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 sm:px-6 sm:flex-row">
         <div className="text-xs text-muted-foreground">
           © {new Date().getFullYear()} Harshita Joshi. Crafted with care.
         </div>
