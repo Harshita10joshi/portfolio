@@ -19,7 +19,6 @@ https://dev-studio-x.lovable.app
 
 - Expense Tracker System
 - Inventory Management System
-- Library Management System
 
 ## 🎯 Purpose
 
