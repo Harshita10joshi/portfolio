@@ -27,7 +27,7 @@ This portfolio serves as a central place to showcase my work, skills, and achiev
 ## 📬 Connect With Me
 
 - GitHub: https://github.com/Harshita10joshi
-- LinkedIn: *Add your LinkedIn profile URL*
+- LinkedIn: https://www.linkedin.com/in/harshita-joshi-5b3623284/
 
 ---
 
